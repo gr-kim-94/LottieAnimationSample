@@ -1,17 +1,17 @@
 //
-//  UpLikeViewController.swift
+//  UpCurvedLikeViewController.swift
 //  LottieAnimationSample
 //
-//  Created by grkim on 2022/07/19.
+//  Created by grkim on 2022/07/21.
 //
 
 import UIKit
 import Lottie
 
-class UpLikeViewController: UIViewController {
+class UpCurvedLikeViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
-        title = "Up Like"
+        title = "Up Curved Like"
     }
     
     required init?(coder: NSCoder) {
@@ -41,6 +41,7 @@ class UpLikeViewController: UIViewController {
         
         let dimension = 30 + drand48() * 10
         animationView.frame = CGRect(x: 0, y: 0, width: dimension, height: dimension)
+        animationView.alpha = drand48()
         
         animationView.play(fromProgress: 0, toProgress: 1, loopMode: .loop)
         
@@ -62,11 +63,18 @@ class UpLikeViewController: UIViewController {
         let randomX: CGFloat = CGFloat(arc4random_uniform(UInt32(self.view.frame.size.width)))
         
         let startPoint = CGPoint(x: randomX, y: self.view.frame.size.height)
-        let endPoint = CGPoint(x: randomX, y: -50)
+        let endPoint = CGPoint(x: randomX, y: 0)
         
         path.move(to: startPoint)
+        
+        let randomXShift = randomX + drand48() * 300
+        let cp1 = CGPoint(x: randomX - randomXShift, y: self.view.frame.size.height / 3)
+        let cp2 = CGPoint(x: randomX + randomXShift, y: (self.view.frame.size.height * 2) / 3)
+        path.addCurve(to: endPoint, controlPoint1: cp1, controlPoint2: cp2)
+        
         path.addLine(to: endPoint)
         
         return path
     }
 }
+

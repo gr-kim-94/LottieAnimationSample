@@ -31,7 +31,8 @@ class MainViewController: UITabBarController {
         viewControllers = [
             UINavigationController(rootViewController:  OneLikeViewController()),
             UINavigationController(rootViewController:  CurvedLikeViewController()),
-            UINavigationController(rootViewController:  UpLikeViewController())
+            UINavigationController(rootViewController:  UpLikeViewController()),
+            UINavigationController(rootViewController:  UpCurvedLikeViewController()),
         ]
 
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8CB4518288922FC00B3AA18 /* UpCurvedLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CB4517288922FC00B3AA18 /* UpCurvedLikeViewController.swift */; };
 		C8E1795228867D9600632673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1795128867D9600632673 /* AppDelegate.swift */; };
 		C8E1795428867D9600632673 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1795328867D9600632673 /* SceneDelegate.swift */; };
 		C8E1795628867D9600632673 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1795528867D9600632673 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8CB4517288922FC00B3AA18 /* UpCurvedLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCurvedLikeViewController.swift; sourceTree = "<group>"; };
 		C8E1794E28867D9600632673 /* LottieAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E1795128867D9600632673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8E1795328867D9600632673 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				C8E1796C288680CE00632673 /* OneLikeViewController.swift */,
 				C8E1796F288680FE00632673 /* CurvedLikeViewController.swift */,
 				C8E179712886811000632673 /* UpLikeViewController.swift */,
+				C8CB4517288922FC00B3AA18 /* UpCurvedLikeViewController.swift */,
 				C88AD240288689F6006C52C9 /* Assets */,
 				C88AD23F288689E4006C52C9 /* Supporting Files */,
 			);
@@ -183,6 +186,7 @@
 				C8E1795628867D9600632673 /* MainViewController.swift in Sources */,
 				C8E179722886811000632673 /* UpLikeViewController.swift in Sources */,
 				C8E1795228867D9600632673 /* AppDelegate.swift in Sources */,
+				C8CB4518288922FC00B3AA18 /* UpCurvedLikeViewController.swift in Sources */,
 				C8E1795428867D9600632673 /* SceneDelegate.swift in Sources */,
 				C8E17970288680FE00632673 /* CurvedLikeViewController.swift in Sources */,
 			);
